@@ -1,5 +1,15 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  
+  background: var(--background-image) no-repeat top center, var(--background-color);
+  background-size: auto 768px;
+  color: var(--main-text-color);
+}
+
+.rec {
+  position: absolute;
+  color: var(--rec-color);
+  text-transform: uppercase;
+  top: 10px;
+  right: 38px;
 }
