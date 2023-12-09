@@ -17,7 +17,17 @@
   .header__theme-menu {
     padding-top: 75px;
   }
-  
+
+  .header__title-description {
+    padding: 70px 0 74px;
+    gap: 57px;
+  }
+
+  .header__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    margin-left: 0;
+    line-height: 82.5%;
+  }
 }
 
 
