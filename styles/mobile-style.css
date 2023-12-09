@@ -13,6 +13,11 @@
   .header__theme-menu-list {
     gap: 11px;
   }
+
+  .header__theme-menu {
+    padding-top: 75px;
+  }
+  
 }
 
 
