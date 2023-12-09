@@ -84,3 +84,12 @@
   gap: 76px;
 }
 
+.header__description {
+  align-self: flex-end;
+  color: var(--article-title-color);
+  font-weight: 700;
+  width: 50%;
+}
+
+
+
