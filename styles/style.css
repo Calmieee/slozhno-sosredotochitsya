@@ -42,3 +42,29 @@
   gap: 12px;
 }
 
+.header__theme-menu-button {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--corners-color);
+  line-height: 100%;
+  padding: 2.5px 12px;
+  border: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover {
+  border: var(--hover-color);
+}
+
+.header__theme-menu-button:focus {
+  border: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--corners-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid;
+}
