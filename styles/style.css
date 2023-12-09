@@ -6,10 +6,29 @@
   color: var(--main-text-color);
 }
 
+.header {
+  position: relative;
+  padding: 0 20px;
+}
+
 .header__rec {
   position: absolute;
   color: var(--rec-color);
   text-transform: uppercase;
-  top: 10px;
-  right: 38px;
+  top: 20px;
+  right: 48px;
 }
+
+.header__rec::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin: -5px -20px 0 0;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--rec-color);
+  background-color: var(--rec-color);
+  top: 50%;
+  right: 0;
+}
+
