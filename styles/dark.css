@@ -18,3 +18,8 @@
   --link-shadow: var(--title-shadow);
   --rec-color: var(--title-shadow);
 }
+
+.dark-theme-title {
+  color: var(--article-title-color);
+}
+

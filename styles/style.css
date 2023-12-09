@@ -98,3 +98,24 @@
   }
 }
 
+.main {
+  padding: 0 20px;
+  margin: 60px 0;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.section {
+  line-height: 130%;
+}
+
+.section__title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--section-title-color);
+}
+
+
