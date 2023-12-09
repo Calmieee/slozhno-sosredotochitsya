@@ -9,8 +9,10 @@
     top: 10px;
     right: 38px;
   }
+
+  .header__theme-menu-list {
+    gap: 11px;
+  }
 }
-
-
 
 
