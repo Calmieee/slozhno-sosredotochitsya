@@ -6,7 +6,7 @@
   color: var(--main-text-color);
 }
 
-.rec {
+.header__rec {
   position: absolute;
   color: var(--rec-color);
   text-transform: uppercase;
