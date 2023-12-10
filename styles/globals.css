@@ -10,6 +10,12 @@ html {
 }
 
 body {
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: var(--background-color);
+  background-size: auto 768px;
+  background-attachment: fixed;
   font-family: "IBM Plex mono", sans-serif;
   font-size: 18px;
   font-weight: 400;
