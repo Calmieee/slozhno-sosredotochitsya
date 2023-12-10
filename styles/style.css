@@ -1,10 +1,37 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+.title-decor {
+  background: var(--title-decor);
+}
+
+.decor::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--corners-color);
+  border-bottom: 1px solid var(--corners-color);
+  left: 20px;
+  bottom: 20px;
+}
+
+.decor::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-right: 1px solid var(--corners-color);
+  border-top: 1px solid var(--corners-color);
+  right: 20px;
+  top: 20px;
+}
 
 .page {
-  background: var(--background-image) no-repeat top center, var(--background-color);
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: var(--background-color);
   background-size: auto 768px;
-  color: var(--main-text-color);
   background-attachment: fixed;
+  color: var(--main-text-color);
 }
 
 .header {
@@ -16,8 +43,8 @@
   position: absolute;
   color: var(--rec-color);
   text-transform: uppercase;
-  top: 20px;
-  right: 48px;
+  top: 21px;
+  right: 49px;
 }
 
 .header__rec::after {
@@ -51,6 +78,7 @@
   padding: 2.5px 12px;
   border: transparent;
   background: none;
+  transition-duration: var(--transition-duration);
   cursor: pointer;
 }
 
@@ -79,23 +107,17 @@
 }
 
 .header__title-section {
+  padding: 238px 0 136px;
   display: flex;
   flex-direction: column;
-  padding: 238px 0 136px;
   gap: 76px;
 }
 
-.header__description {
-  align-self: flex-end;
+.header__title-description {
   color: var(--article-title-color);
+  align-self: flex-end;
   font-weight: 700;
   width: 50%;
-}
-
-@media (375px <= width < 1024px) {
-  .header__title {
-    text-shadow: 4px 4px 0px var(--title-decor);
-  }
 }
 
 .main {
@@ -118,4 +140,115 @@
   color: var(--section-title-color);
 }
 
+.section__article-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section__article-list-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--article-title-color);
+}
+
+.section__article-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section__article-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--article-title-color);
+}
+
+.section__article-title_advice {
+  font-weight: 400;
+}
+
+.section__article-text-link {
+  border: transparent;
+  text-shadow: 3px 3px 0px var(--link-shadow);
+  transition-duration: var(--transition-duration);
+}
+
+.section__article-text-link:hover {
+  border-bottom: 1px solid var(--main-text-color);
+}
+
+.section__article-text-link:focus {
+  outline: none;
+}
+
+.section__article-text-link:focus-visible {
+  outline: 1px solid var(--main-text-color);
+}
+
+.section:first-of-type,
+.section:nth-of-type(3) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section:first-of-type .section__title,
+.section:nth-of-type(3) .section__title {
+  flex: 0 0 auto;
+  width: 33%;
+}
+
+.section:first-of-type .section__article-list,
+.section:nth-of-type(3) .section__article-list {
+  flex: 0 0 auto;
+  width: 66%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section:nth-of-type(2) .section__title {
+  width: 30%;
+}
+
+.section:nth-of-type(2) .section__article-item {
+  flex: 0 0 auto;
+  width: 32%;
+}
+
+.section-image {
+  display: grid;
+}
+
+.section-image .section__title {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  width: 100%;
+  margin: 0;
+}
+
+.footer {
+  padding: 282px 20px;
+  position: relative;
+  text-align: center;
+}
+
+.footer__title {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-weight: 700;
+  color: var(--title-color);
+  text-shadow: 2px 2px 0px var(--title-shadow);
+}
+
+@media (width < 1024px) {
+  .header__theme-menu-list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media (width >= 1024px) {
+  .section:nth-of-type(2) .section__article-list {
+    justify-content: space-between;
+  }
+}
 

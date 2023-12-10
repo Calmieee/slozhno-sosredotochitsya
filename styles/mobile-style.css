@@ -1,13 +1,21 @@
-/* Стили для мобильного разрешения */
-
 @media (375px <= width < 768px) {
+  .decor::before {
+    left: 10px;
+    bottom: 17px;
+  }
+
+  .decor::after {
+    right: 10px;
+    top: 10px;
+  }
+  
   .header {
     padding: 0 10px;
   }
 
   .header__rec {
-    top: 10px;
-    right: 38px;
+    top: 11px;
+    right: 39px;
   }
 
   .header__theme-menu-list {
@@ -44,7 +52,40 @@
     margin-bottom: 20px;
   }
 
-  
+  .section:first-of-type .section__title,
+  .section:nth-of-type(3) .section__title {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .section:first-of-type .section__article-list,
+  .section:nth-of-type(3) .section__article-list {
+    width: 100%;
+  }
+
+  .section:nth-of-type(2) .section__title {
+    width: 100%;
+  }
+
+  .footer__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+  .footer {
+    margin-top: 38px;
+    padding: 262px 0;
+  }
 }
 
+@media (width < 768px) {
+  .section-image .image {
+    width: 100%;
+    height: auto;
+  }
 
+  .section-image {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
