@@ -29,6 +29,7 @@
 }
 
 .header {
+  height: max(100vh, 668px);
   position: relative;
   padding: 0 20px;
 }
