@@ -87,6 +87,7 @@
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--corners-color);
+  pointer-events: none;
 }
 
 .header__theme-menu-button_active {
