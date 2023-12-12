@@ -14,6 +14,6 @@
   --rec-color: var(--title-shadow);
 }
 
-.dark-theme-title {
+.theme-title {
   color: var(--article-title-color);
 }
