@@ -1,22 +1,4 @@
 @media (375px <= width < 768px) {
-  .decor::before {
-    left: 10px;
-    bottom: 17px;
-  }
-
-  .decor::after {
-    right: 10px;
-    top: 10px;
-  }
-  
-  .header {
-    padding: 0 10px;
-  }
-
-  .header__rec {
-    top: 11px;
-    right: 39px;
-  }
 
   .header__theme-menu-list {
     gap: 11px;
@@ -25,6 +7,12 @@
   .header__theme-menu {
     padding-top: 75px;
   }
+
+  .header__title-section {
+    padding: 70px 0 74px;
+    gap: 57px;
+  }
+
   .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     margin-left: 0;
