@@ -43,6 +43,7 @@
 .header {
   position: relative;
   padding: 0 20px;
+  height: max(100vh, 668px);
 }
 
 @media (width < 768px) {
