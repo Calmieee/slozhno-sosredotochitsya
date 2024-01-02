@@ -84,19 +84,19 @@
 }
 
 .header__theme-menu {
-  padding-top: 20px;
+  padding-top: 2%;
   align-self: start;
 }
 
 @media (width < 1024px) {
   .header__theme-menu {
-    padding-top: 190px;
+    padding: 25% 2.6% 0;
   }
 }
 
 @media (width < 768px) {
   .header__theme-menu {
-    padding-top: 75px;
+    padding: 21.6% 0 0;
   }
 }
 
@@ -151,7 +151,6 @@
 
 @media (width < 1024px) {
   .header__title {
-    margin-left: -3%;
     text-shadow: 4px 4px 0px var(--title-decor);
   }
 }
@@ -159,7 +158,6 @@
 @media (width < 768px) {
   .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    margin-left: 0;
     line-height: 82.5%;
   }
 }
@@ -191,6 +189,13 @@
   width: 48%;
   justify-self: end;
   margin: 0 2% 5.5%;
+}
+
+@media (width < 1024px) {
+  .header__title-description {
+    width: 47.4%;
+    margin: 0 2.6% 6.3%;
+  }
 }
 
 @media (width < 768px) {
