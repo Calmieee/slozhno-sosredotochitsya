@@ -254,7 +254,7 @@
 
 .section__article-text-link {
   border: transparent;
-  text-shadow: 3px 3px 0px var(--link-shadow);
+  text-shadow: 2px 2px 0px var(--link-shadow);
 }
 
 .section__article-text-link:hover {
