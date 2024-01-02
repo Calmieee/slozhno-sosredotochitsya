@@ -257,6 +257,12 @@
   text-shadow: 2px 2px 0px var(--link-shadow);
 }
 
+@media (width < 768px) {
+  .section__article-text-link {
+    text-shadow: 2px 0.5px 0px var(--link-shadow);
+  }
+}
+
 .section__article-text-link:hover {
   border-bottom: 1px solid var(--main-text-color);
 }
