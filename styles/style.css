@@ -119,6 +119,7 @@
   background: none;
   transition-duration: var(--transition-duration);
   cursor: pointer;
+  text-transform: lowercase;
 }
 
 .header__theme-menu-button:hover {
