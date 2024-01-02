@@ -27,7 +27,7 @@
 @media (width < 768px) {
   .decor::before {
     left: 10px;
-    bottom: 17px;
+    bottom: 10px;
   }
 
   .decor::after {
@@ -49,6 +49,7 @@
 @media (width < 768px) {
   .header {
     padding: 0 10px;
+    margin-bottom: 40px;
   }
 }
 
@@ -417,7 +418,7 @@
 @media (width < 768px) {
   .footer {
     margin-top: 38px;
-    padding: 262px 0;
+    padding: 260px 0;
   }
 }
 
