@@ -136,6 +136,7 @@
 
 .header__theme-menu-button_active {
   border: 1px solid;
+  pointer-events: none;
 }
 
 .header__title {
