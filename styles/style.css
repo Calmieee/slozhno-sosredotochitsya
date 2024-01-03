@@ -364,17 +364,17 @@
   height: 100%;
 }
 
-.section-image .image:first-of-type,
+.section-image .image-sunset,
 .section-image .image-image {
   grid-column: 2 span;
 }
 
-.section-image .image:nth-of-type(2),
-.section-image .image:nth-of-type(3) {
+.section-image .image-ice-cream,
+.section-image .image-tape {
   grid-row: 2 span;
 }
 
-.image:last-of-type {
+.image-street {
   grid-column: 2 span;
 }
 
