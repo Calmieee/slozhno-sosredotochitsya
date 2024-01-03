@@ -365,7 +365,7 @@
 }
 
 .section-image .image-sunset,
-.section-image .image-image {
+.section-image {
   grid-column: 2 span;
 }
 
