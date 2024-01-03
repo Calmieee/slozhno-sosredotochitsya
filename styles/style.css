@@ -276,35 +276,35 @@
 }
 
 .section-why,
-.section:nth-of-type(3) {
+.section-advices {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .section-why .section__title,
-.section:nth-of-type(3) .section__title {
+.section-advices .section__title {
   flex: 0 0 auto;
   width: 33%;
 }
 
 @media (width < 1024px) {
   .section-why .section__title,
-  .section:nth-of-type(3) .section__title {
+  .section-advices .section__title {
     width: 32%;
   }
 }
 
 @media (width < 768px) {
   .section-why .section__title,
-  .section:nth-of-type(3) .section__title {
+  .section-advices .section__title {
     width: 100%;
     margin-bottom: 20px;
   }
 }
 
 .section-why .section__article-list,
-.section:nth-of-type(3) .section__article-list {
+.section-advices .section__article-list {
   flex: 0 0 auto;
   width: 66%;
   flex-direction: column;
@@ -313,14 +313,14 @@
 
 @media (width < 1024px) {
   .section-why .section__article-list,
-  .section:nth-of-type(3) .section__article-list {
+  .section-advices .section__article-list {
     width: 65%;
   }
 }
 
 @media (width < 768px) {
   .section-why .section__article-list,
-  .section:nth-of-type(3) .section__article-list {
+  .section-advices .section__article-list {
     width: 100%;
   }
 }
