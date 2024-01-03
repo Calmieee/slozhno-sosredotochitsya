@@ -254,7 +254,7 @@
 
 .section__article-text-link {
   border: transparent;
-  text-shadow: 2px 2px 0px var(--link-shadow);
+  text-shadow: var(--value-text-shadow) var(--link-shadow);
 }
 
 @media (width < 768px) {
@@ -421,12 +421,12 @@
   font-size: var(--default-font-size);
   font-weight: 700;
   color: var(--title-color);
-  text-shadow: 2px 2px 0px var(--title-shadow);
+  text-shadow: var(--value-text-shadow) var(--title-shadow);
 }
 
 @media (width < 1024px) {
   .footer__title {
-    text-shadow: 2px 2px 0px var(--title-decor);
+    text-shadow: var(--value-text-shadow) var(--title-decor);
   }
 }
 
