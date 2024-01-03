@@ -399,21 +399,17 @@
 }
 
 .footer {
-  padding: 282px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max(100vh, 668px);
   position: relative;
   text-align: center;
 }
 
-@media (width < 1024px) {
-  .footer {
-    padding: 434px 20px;
-  }
-}
-
 @media (width < 768px) {
   .footer {
-    margin-top: 38px;
-    padding: 260px 0;
+    margin-top: 11%;
   }
 }
 
